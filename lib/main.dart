@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter advanced',
+      title: 'Flutter advanced course',
       theme: ThemeData(
         // This is the theme of your application.
         //
