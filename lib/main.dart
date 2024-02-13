@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:project/core/routing/app_router.dart';
+import 'package:project/doc_app.dart';
 
 void main() {
+<<<<<<< HEAD
+  runApp(DocApp(
+    appRouter: AppRouter(),
+  ));
+=======
   runApp(const MyApp());
 }
 
@@ -14,6 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter advanced course',
       theme: ThemeData(
+        //
         // TRY THIS: Try running your application with "flutter run". You'll see
         // the application has a purple toolbar. Then, without quitting the app,
         // try changing the seedColor in the colorScheme below to Colors.green
@@ -121,4 +129,5 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+>>>>>>> development
 }
