@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:project/core/helpers/spacing.dart';
 import 'package:project/core/theming/style.dart';
+import 'package:project/core/widgets/app_text_button.dart';
 import 'package:project/core/widgets/app_text_form_field.dart';
+import 'package:project/features/login/ui/widgets/already_have_account_text.dart';
+import 'package:project/features/login/ui/widgets/terms_and_conditions_text.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -55,7 +58,23 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ? Icons.visibility_off
                                 : Icons.visibility),
                           ),
-                        )
+                        ),
+                        verticalSpace(24),
+                        Align(
+                            alignment: AlignmentDirectional.centerEnd,
+                            child: Text(
+                              'Forgot password ?',
+                              style: TextStyles.font13blueregular,
+                            )),
+                        verticalSpace(40),
+                        AppTextButton(
+                            buttonText: 'Login',
+                            textStyle: TextStyles.font16whitesemibold,
+                            onPressed: () {}),
+                        verticalSpace(16),
+                        const TermsAndConditionsText(),
+                        verticalSpace(60),
+                        const AlreadyHaveAccountText(),
                       ],
                     ))
               ],
